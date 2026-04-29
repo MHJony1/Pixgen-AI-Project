@@ -1,4 +1,6 @@
 import Banner from "@/components/Banner";
+import TopGenerations from "@/components/TopGenerations";
+import TopGenaratoins from "@/components/TopGenerations";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,7 +8,7 @@ export default function Home() {
   <div >
       <Banner/>
 
-      {/* <TopGenerations/> */}
+      <TopGenerations/>
    
     </div>
   );
