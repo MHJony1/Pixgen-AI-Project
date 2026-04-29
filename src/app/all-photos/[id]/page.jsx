@@ -13,7 +13,6 @@ import Image from 'next/image';
 const PhotoDetailsPage = async ({ params }) => {
   const { id } = await params;
   const res = await fetch('https://pixgen-ai-project.vercel.app/data.json', {
-    next: { revalidate: 3600 }, // Cache performance er jonno
   });
   const photos = await res.json();
   const photo = photos.find((p) => p.id === parseInt(id));
